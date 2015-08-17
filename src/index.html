@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>            <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>                 <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>                 <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bareatlas</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" id="snipcart-theme" href="https://app.snipcart.com/themes/base/snipcart.css" type="text/css"/>
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="css/flexslider.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" id="snipcart" src="https://app.snipcart.com/scripts/snipcart.js" data-api-key="ZDI2NGM3N2EtM2UzMC00NDYwLWIwMWUtMGE5YzkzNWIyZTY4"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-boostrap-tpls.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body style="padding-top: 50px; background-color:#F8F8F8" class="snipcart-overwrite">
+    <header class="header">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand navbar-left" href="#" style="padding-top: 6px; padding-bottom: 0px; padding-right: 6px">
+                        <img src="img/banner.jpeg">
+                    </a>
+                    <ul class="nav navbar-nav">
+                        <li class="divider-vertical"></li>
+                        <li class="active navbar-left"><a href="#"><span class="fa fa-home fa-fw"></span> Home</a></li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a href="products.html">Products <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="products/shirts.html">Bare Shirts</a></li>
+                                <li><a href="products/cases.html">Bare Cases</a></li>
+                                <li><a href="products/accessories.html">Bare Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="about.html"><span class="fa fa-newspaper-o fa-fw"></span> About Us</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="contact.html"><span class="fa fa-phone fa-fw"></span> Contact Us</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="brand snipcart-checkout"><span class="snipcart-summary"><i class="fa fa-shopping-cart"></i> My Cart: <span class="snipcart-total-items"></span> item(s)</span></a></li>
+                        <li><a class="brand">Find us on:</a></li>
+                        <li><a href="http://www.facebook.com/BareAtlas" class="fa fa-facebook-square fa-fw fa-lg"></a></li>
+                        <li><a href="https://twitter.com/BareAtlas" class="fa fa-twitter-square fa-fw fa-lg"></a></li>
+                        <li><a href="http://instagram.com/bareatlas" class="fa fa-instagram fa-fw fa-lg"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="flexslider">
+        <ul class="slides">
+            <li><img src="img/HP1.jpeg" style="height: 600px;"/></li>
+            <li><img src="img/HP2.jpg" style="height: 600px;"/></li>
+            <li><img src="img/HP3.jpg" style="height: 600px;"/></li>
+            <li><img src="img/HP4.jpg" style="height: 600px;"/></li>
+            <li><img src="img/HP5.jpg" style="height: 600px;"/></li>
+        </ul>
+    </div>
+
+    <ul class="products">
+        <li>
+            <div class="content-container">
+                <a href="products/cases.html" class="visual">
+                    <div class="overlay"><p>Shop Now</p></div>
+                    <div class="title"><p>Bare Cases</p></div>
+                    <img src="img/BAO1.jpg" height="400" width="304">
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="content-container">
+                <a href="products/accessories/decals.html" class="visual">
+                    <div class="overlay"><p>Shop Now</p></div>
+                    <div class="title"><p>Bare Decals</p></div>
+                    <img src="img/decal1.jpg" height="400" width="304">
+                </a>
+            </div>
+        </li>
+    </ul>
+
+    <footer class="footer">
+        <div class="navbar navbar-default">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand navbar-left" href="#" style="padding-top: 6px; padding-bottom: 0px; padding-right: 6px">
+                        <img src="img/Bareatlasabove.png"/>
+                    </a>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="http://www.facebook.com/BareAtlas" class="fa fa-facebook-square fa-fw fa-3x"></a></li>
+                        <li><a href="https://twitter.com/BareAtlas" class="fa fa-twitter-square fa-fw fa-3x"></a></li>
+                        <li><a href="http://instagram.com/bareatlas" class="fa fa-instagram fa-fw fa-3x"></a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="returns.html">Return Policy</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="terms.html">Terms and Conditions</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>Website created by <a href="https://github.com/FishHooks" style="text-decoration: none;">@FishHooks <i class="fa fa-github"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- In production use:<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script> -->
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="js/main.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

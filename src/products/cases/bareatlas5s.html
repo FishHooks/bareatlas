@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>            <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>                 <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>                 <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BareAtlas 5s</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" id="snipcart-theme" href="https://app.snipcart.com/themes/base/snipcart.css" type="text/css"/>
+    <link rel="stylesheet" href="../../bower_components/html5-boilerplate/css/normalize.css"/>
+    <link rel="stylesheet" href="../../bower_components/html5-boilerplate/css/main.css"/>
+    <link rel="stylesheet" href="../../css/flexslider.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../../bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" id="snipcart" src="https://app.snipcart.com/scripts/snipcart.js" data-api-key="ZDI2NGM3N2EtM2UzMC00NDYwLWIwMWUtMGE5YzkzNWIyZTY4"></script>
+    <script src="../../js/jquery.flexslider-min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+    <script src="../../bower_components/angular-bootstrap/ui-boostrap-tpls.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body style="padding-top: 50px; background-color:#f8f8f8" ng-controller="Bareatlas5sListCtrl" class="snipcart-overwrite">
+    <header class="header">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand navbar-left" href="../../index.html" style="padding-top: 6px; padding-bottom: 0px; padding-right: 6px">
+                        <img src="../../img/banner.jpeg">
+                    </a>
+                    <ul class="nav navbar-nav">
+                        <li class="divider-vertical"></li>
+                        <li class="navbar-left"><a href="../../index.html"><span class="fa fa-home fa-fw"></span> Home</a></li>
+                        <li class="divider-vertical"></li>
+                        <li class="active dropdown">
+                            <a href="../../products.html">Products <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="../shirts.html">Bare Shirts</a></li>
+                                <li><a href="../cases.html">Bare Cases</a></li>
+                                <li><a href="../accessories.html">Bare Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="../../about.html"><span class="fa fa-newspaper-o fa-fw"></span> About Us</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="../../contact.html"><span class="fa fa-phone fa-fw"></span> Contact Us</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="brand snipcart-checkout"><span class="snipcart-summary"><i class="fa fa-shopping-cart"></i> My Cart: <span class="snipcart-total-items"></span> item(s)</span></a></li>
+                        <li><a class="brand">Find us on:</a></li>
+                        <li><a href="http://www.facebook.com/BareAtlas" class="fa fa-facebook-square fa-fw fa-lg"></a></li>
+                        <li><a href="https://twitter.com/BareAtlas" class="fa fa-twitter-square fa-fw fa-lg"></a></li>
+                        <li><a href="http://instagram.com/bareatlas" class="fa fa-instagram fa-fw fa-lg"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div style="height: 100px;"></div>
+    <div class="product-gallery-wrapper">
+        <img src="../../img/BAO1.jpg" class="product-pic"></img>
+        <div class="gallery-wrapper">
+            <img ng-repeat="pic in pictures" ng-src="{{pic.link}}" class="product-pic-sm" onclick="document.getElementsByClassName('product-pic')[0].src=this.src"></img>
+        </div>
+    </div>
+    <div class="name-box"><p class="product-name"><strong>BareAtlas 5s</strong></p></div>
+    <div class="price-box"><p class="product-price"><em>$25.00</em></p></div>
+    <div class="color-box">
+        <p class="color"><strong>Color:&nbsp;&nbsp;&nbsp;&nbsp;</strong><span class="color-name"></span></p>
+        <img class="color-block" ng-repeat="color in colors" ng-src="{{color.link}}" title="{{color.title}}" onclick="document.getElementsByClassName('color-name')[0].innerHTML=this.title; document.getElementsByClassName('snipcart-add-item')[0].setAttribute('data-item-description', 'BareAtlas 5s in '+this.title)"></img>
+        <!--<p class="size"><strong>Size:&nbsp;&nbsp;&nbsp;&nbsp;</strong><span class="size-name"></span></p>
+        <div class="size-block" ng-repeat="size in sizes" title="{{size.title}}" onclick="document.getElementsByClassName('size-name')[0].innerHTML=this.title; document.getElementsByClassName('snipcart-add-item')[0].setAttribute('data-item-custom1-value', this.title)">{{size.letter}}</div>-->
+        <div class="add-to-cart"><a href="#"
+            class="snipcart-add-item"
+            data-item-id="bareatlas5s"
+            data-item-name="BareAtlas 5s"
+            data-item-price="25.00"
+            data-item-url="."
+            data-item-description=""
+            data-item-custom2-name="Special Comments"
+            data-item-custom2-type="textarea">
+            add to cart&nbsp;&nbsp;<i class="fa fa-arrow-right"></i>
+        </a></div>
+    </div>
+    <div class="description-box">
+        <p class="heading"><strong>Product Description</strong></p>
+        <p class="description">Laser-etched oak iPhone 5s case. The wood used is unique to each case, so color may vary slightly. NOTE: This case will fit iPhone 5s ONLY.</p>
+    </div>
+    </br>
+    <footer class="footer">
+        <div class="navbar navbar-default">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand navbar-left" href="#" style="padding-top: 6px; padding-bottom: 0px; padding-right: 6px">
+                        <img src="../../img/Bareatlasabove.png"/>
+                    </a>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="http://www.facebook.com/BareAtlas" class="fa fa-facebook-square fa-fw fa-3x"></a></li>
+                        <li><a href="https://twitter.com/BareAtlas" class="fa fa-twitter-square fa-fw fa-3x"></a></li>
+                        <li><a href="http://instagram.com/bareatlas" class="fa fa-instagram fa-fw fa-3x"></a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="../../returns.html">Return Policy</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="../../privacy.html">Privacy Policy</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="../../terms.html">Terms and Conditions</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>Website created by <a href="https://github.com/FishHooks" style="text-decoration: none;">@FishHooks <i class="fa fa-github"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
